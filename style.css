@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -8,23 +9,147 @@ body {
     color: white;
     font-family: "Poppins", sans-serif;
 }
-nav{
+
+nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     height: 80px;
     background-color: rgb(35, 35, 63);
+    padding: 0 20px;
 }
-nav ul{
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.hero {
     display: flex;
     justify-content: center;
-
+    align-items: center;
+    height: 100vh;
+    background: url('hero-background.jpg') no-repeat center center/cover;
+    text-align: center;
 }
-nav ul li{
-    list-style: none;
-    margin: 0 23px;
 
+.hero-content {
+    max-width: 600px;
 }
-.left{
-    font-size: 1rem;
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: rgb(35, 35, 63);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+section {
+    padding: 60px 20px;
+}
+
+.about, .services, .projects, .contact {
+    text-align: center;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+.service-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service-item {
+    background-color: rgb(35, 35, 63);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    width: 250px;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-item {
+    margin: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+.project-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input, form textarea {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: white;
+    color: black;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(35, 35, 63);
+}
+
+footer a {
+    color: lightblue;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
